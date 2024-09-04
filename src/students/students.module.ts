@@ -1,0 +1,15 @@
+ //export class Student {
+   // id: number;
+    //name: string;
+    //age: number;
+  //}
+  
+  import { Module } from '@nestjs/common';
+  import { StudentsController } from './students.controller';
+  import { StudentsService } from './students.service';
+  
+  @Module({
+    controllers: [StudentsController],
+    providers: [StudentsService],
+  })
+  export class StudentsModule {}
